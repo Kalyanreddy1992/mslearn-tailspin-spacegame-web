@@ -11,6 +11,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  group: 'New variable group 23-Feb'
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
