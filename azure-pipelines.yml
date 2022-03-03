@@ -15,7 +15,8 @@ variables:
 
 steps:
 - script: |
-    echo $(today)
+    echo $(testing-mar2)
+    echo $(latest)
     echo $(testing)
   displayName: 'Testing the variable'
 
