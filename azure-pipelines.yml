@@ -11,8 +11,11 @@ pool:
 
 variables:
   - group: 'New variable group 23-Feb'
+  - group: 'New variable group 24-Feb'
 
 steps:
-- script: echo $(Testing)
+- script: |
+    echo $(Testing)
+    echo $(testing)
   displayName: 'Testing the variable'
 
