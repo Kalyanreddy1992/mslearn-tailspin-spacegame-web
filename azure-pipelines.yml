@@ -10,13 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  buildConfiguration: 'Release'
-  group: 'New variable group 23-Feb'
+  - group: 'New variable group 23-Feb'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
-
 - script: echo $(Testing)
   displayName: 'Testing the variable'
 
